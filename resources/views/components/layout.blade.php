@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}" >
   </head>
   <body>
-
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="nav-link" href="{{ route('series.index') }}">HOME</a>
+    @auth
+    <a class="nav-link" href="{{ route('logout') }}">Logout</a>
+    @endauth
+    @guest
+    <a class="nav-link" href="{{ route('login') }}">Login</a>
+    @endguest
+  </nav>
 
 
       <div class="container">
