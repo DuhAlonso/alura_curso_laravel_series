@@ -16,6 +16,13 @@
       <div class="container">
       
   <h1>{{$title}}</h1>
+
+  @isset($mensagemSucesso)
+    <div class="alert alert-primary" role="alert">
+        <strong>{{$mensagemSucesso}}</strong>
+    </div>
+    @endisset
+
   @if ($errors->any())
     <div class="alert alert-danger">
         <ul>
