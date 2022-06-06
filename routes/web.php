@@ -1,5 +1,6 @@
 <?php
 
+
 use App\Http\Controllers\EpisodesController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\SeasonsController;
@@ -34,6 +35,15 @@ Route::post('/login', [LoginController::class, 'store'])->name('sigin');
 Route::get('/logout', [LoginController::class, 'destroy'])->name('logout');
 Route::get('/users/user', [UsersController::class, 'create'])->name('users.create');
 Route::post('/users/user', [UsersController::class, 'store'])->name('users.store');
+
+Route::get('/mail', function (){
+    return new \App\Mail\SeriesCreated(
+        'Serie TEste',
+        18,
+        7,
+        5
+    );
+});
 
 // Route::controller(SeriesController::class)->group(function (){
 //     Route::get('/series', 'index')->name('series.index');
