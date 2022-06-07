@@ -7,6 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Estudando Laravel
+
+Uma aplicação feita no curso da alura para desenvolvimento de aplicações web e api's com laravel.
+
+## Sobre o projeto
+
+Basicamente um CRUD para entender como o laravel funciona. No curso foi abordado sobre, composer, rotas, controllers, models, eloquent, fila de tarefas, migrations, entre outros...
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
